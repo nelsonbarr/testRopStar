@@ -1,0 +1,95 @@
+2021-05-09T03:34:07+00:00 CRITICAL syntax error, unexpected '8' (T_LNUMBER) in /var/www/html/wp_test/wp-content/themes/storefront/functions.php on line 75
+
+2021-05-09T03:54:35+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 20480 bytes) in /var/www/html/wp_test/wp-includes/post.php on line 2440
+
+2021-05-09T03:55:03+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 20480 bytes) in /var/www/html/wp_test/wp-includes/formatting.php on line 984
+
+2021-05-09T15:12:16+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_wp_text_input() in /var/www/html/wp_test/wp-content/plugins/plgMovies/custom/functions.php:29
+Stack trace:
+#0 /var/www/html/wp_test/wp-includes/class-wp-hook.php(292): woocommerce_anadir_antes_de_pestanas()
+#1 /var/www/html/wp_test/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#2 /var/www/html/wp_test/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /var/www/html/wp_test/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/variation-add-to-cart-button.php(15): do_action()
+#4 /var/www/html/wp_test/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/w...')
+#5 /var/www/html/wp_test/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2982): wc_get_template()
+#6 /var/www/html/wp_test/wp-includes/class-wp-hook.php(292): woocommerce_single_variation_add_to_cart_button()
+#7 /var/www/html/wp_test/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#8 /var/www/html/wp_te in /var/www/html/wp_test/wp-content/plugins/plgMovies/custom/functions.php on line 29
+
+2021-05-09T15:19:58+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_wp_text_input() in /var/www/html/wp_test/wp-content/plugins/plgMovies/custom/functions.php:30
+Stack trace:
+#0 /var/www/html/wp_test/wp-includes/class-wp-hook.php(292): woocommerce_anadir_custom_field()
+#1 /var/www/html/wp_test/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#2 /var/www/html/wp_test/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /var/www/html/wp_test/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/variation-add-to-cart-button.php(15): do_action()
+#4 /var/www/html/wp_test/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/w...')
+#5 /var/www/html/wp_test/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2982): wc_get_template()
+#6 /var/www/html/wp_test/wp-includes/class-wp-hook.php(292): woocommerce_single_variation_add_to_cart_button()
+#7 /var/www/html/wp_test/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#8 /var/www/html/wp_test/wp in /var/www/html/wp_test/wp-content/plugins/plgMovies/custom/functions.php on line 30
+
+2021-05-09T17:07:23+00:00 CRITICAL Uncaught Error: Call to undefined function wp_get_post_meta() in /var/www/html/wp_test/wp-content/plugins/plgMovies/custom/functions.php:81
+Stack trace:
+#0 /var/www/html/wp_test/wp-includes/class-wp-hook.php(294): cstm_woocommerce_order_item_name()
+#1 /var/www/html/wp_test/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/html/wp_test/wp-content/plugins/woocommerce/templates/order/order-details-item.php(33): apply_filters()
+#3 /var/www/html/wp_test/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/w...')
+#4 /var/www/html/wp_test/wp-content/plugins/woocommerce/templates/order/order-details.php(71): wc_get_template()
+#5 /var/www/html/wp_test/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/html/w...')
+#6 /var/www/html/wp_test/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2607): wc_get_template()
+#7 /var/www/html/wp_test/wp-includes/class-wp-hook.php(292): woocommerce_order_details_table()
+#8 /var/ww in /var/www/html/wp_test/wp-content/plugins/plgMovies/custom/functions.php on line 81
+
+2021-05-09T18:04:22+00:00 CRITICAL Uncaught Error: Call to undefined function submit_button() in /var/www/html/wp_test/wp-admin/includes/file.php:2304
+Stack trace:
+#0 /var/www/html/wp_test/wp-admin/includes/class-wp-upgrader-skin.php(139): request_filesystem_credentials()
+#1 /var/www/html/wp_test/wp-admin/includes/class-automatic-upgrader-skin.php(49): WP_Upgrader_Skin->request_filesystem_credentials()
+#2 /var/www/html/wp_test/wp-admin/includes/class-wp-site-health-auto-updates.php(282): Automatic_Upgrader_Skin->request_filesystem_credentials()
+#3 /var/www/html/wp_test/wp-admin/includes/class-wp-site-health-auto-updates.php(36): WP_Site_Health_Auto_Updates->test_check_wp_filesystem_method()
+#4 /var/www/html/wp_test/wp-admin/includes/class-wp-site-health.php(1787): WP_Site_Health_Auto_Updates->run_tests()
+#5 /var/www/html/wp_test/wp-includes/rest-api/endpoints/class-wp-rest-site-health-controller.php(194): WP_Site_Health->get_test_background_updates()
+#6 /var/www/html/wp_test/wp-includes/rest-api/class-wp-rest-server.php(1139): WP_REST_Site_Hea in /var/www/html/wp_test/wp-admin/includes/file.php on line 2304
+
+2021-05-09T18:35:38+00:00 CRITICAL Uncaught Error: Call to undefined function dd_action() in /var/www/html/wp_test/wp-content/plugins/plgMovies/custom/functions.php:97
+Stack trace:
+#0 /var/www/html/wp_test/wp-content/plugins/plgMovies/plgMovies.php(31): require_once()
+#1 /var/www/html/wp_test/wp-content/plugins/plgMovies/plgMovies.php(108): PlgMovies->__construct()
+#2 /var/www/html/wp_test/wp-includes/class-wp-hook.php(292): plgMovies_main()
+#3 /var/www/html/wp_test/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#4 /var/www/html/wp_test/wp-includes/plugin.php(484): WP_Hook->do_action()
+#5 /var/www/html/wp_test/wp-settings.php(423): do_action()
+#6 /var/www/html/wp_test/wp-config.php(90): require_once('/var/www/html/w...')
+#7 /var/www/html/wp_test/wp-load.php(37): require_once('/var/www/html/w...')
+#8 /var/www/html/wp_test/wp-admin/admin-ajax.php(22): require_once('/var/www/html/w...')
+#9 {main}
+  thrown in /var/www/html/wp_test/wp-content/plugins/plgMovies/custom/functions.php on line 97
+
+2021-05-09T18:35:52+00:00 CRITICAL Uncaught Error: Call to undefined function dd_action() in /var/www/html/wp_test/wp-content/plugins/plgMovies/custom/functions.php:97
+Stack trace:
+#0 /var/www/html/wp_test/wp-content/plugins/plgMovies/plgMovies.php(31): require_once()
+#1 /var/www/html/wp_test/wp-content/plugins/plgMovies/plgMovies.php(108): PlgMovies->__construct()
+#2 /var/www/html/wp_test/wp-includes/class-wp-hook.php(292): plgMovies_main()
+#3 /var/www/html/wp_test/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#4 /var/www/html/wp_test/wp-includes/plugin.php(484): WP_Hook->do_action()
+#5 /var/www/html/wp_test/wp-settings.php(423): do_action()
+#6 /var/www/html/wp_test/wp-config.php(90): require_once('/var/www/html/w...')
+#7 /var/www/html/wp_test/wp-load.php(37): require_once('/var/www/html/w...')
+#8 /var/www/html/wp_test/wp-admin/admin.php(34): require_once('/var/www/html/w...')
+#9 /var/www/html/wp_test/wp-admin/post.php(12): require_once('/var/www/html/w...')
+#10 {main}
+  thrown in /var/www/html/wp_test/wp-content/plugins/plgMovies/custom/functions.php on line 97
+
+2021-05-09T18:35:52+00:00 CRITICAL Uncaught Error: Call to undefined function dd_action() in /var/www/html/wp_test/wp-content/plugins/plgMovies/custom/functions.php:97
+Stack trace:
+#0 /var/www/html/wp_test/wp-content/plugins/plgMovies/plgMovies.php(31): require_once()
+#1 /var/www/html/wp_test/wp-content/plugins/plgMovies/plgMovies.php(108): PlgMovies->__construct()
+#2 /var/www/html/wp_test/wp-includes/class-wp-hook.php(292): plgMovies_main()
+#3 /var/www/html/wp_test/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#4 /var/www/html/wp_test/wp-includes/plugin.php(484): WP_Hook->do_action()
+#5 /var/www/html/wp_test/wp-settings.php(423): do_action()
+#6 /var/www/html/wp_test/wp-config.php(90): require_once('/var/www/html/w...')
+#7 /var/www/html/wp_test/wp-load.php(37): require_once('/var/www/html/w...')
+#8 /var/www/html/wp_test/wp-admin/admin-ajax.php(22): require_once('/var/www/html/w...')
+#9 {main}
+  thrown in /var/www/html/wp_test/wp-content/plugins/plgMovies/custom/functions.php on line 97
+
